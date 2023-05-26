@@ -1,5 +1,5 @@
-import roundGames from "../src/index.js";
-import getRandom from "../src/getRandom.js";
+import roundGames from "../index.js";
+import getRandom from "../getRandom.js";
 
 const even = () => {
   let answerCorrect = "";

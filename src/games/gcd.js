@@ -1,6 +1,6 @@
-import roundGames from "../src/index.js";
-import getRandom from "../src/getRandom.js";
-import nod from "../src/nod.js";
+import roundGames from "../index.js";
+import getRandom from "../getRandom.js";
+import nod from "../nod.js";
 
 const gcd = () => {
   let answerCorrect = "";
