@@ -1,13 +1,13 @@
-import roundGames from "../index.js";
-import getRandom from "../getRandom.js";
+import roundGames from '../index.js';
+import getRandom from '../getRandom.js';
 
 const prime = () => {
   let resultPrime = [
     'Answer "yes" if given number is prime. Otherwise answer "no".',
   ];
   for (let i = 0; i < 3; i++) {
-    let answerCorrect = "yes";
-    let questionPrime = "";
+    let answerCorrect = 'yes';
+    let questionPrime = '';
     const numberPrime = getRandom(2, 101); // setting the range of random number 1
     questionPrime = numberPrime;
     for (
@@ -16,7 +16,7 @@ const prime = () => {
       ++startNumber
     ) {
       if (numberPrime % startNumber === 0) {
-        answerCorrect = "no";
+        answerCorrect = 'no';
       }
     }
     resultPrime.push([questionPrime, answerCorrect]);

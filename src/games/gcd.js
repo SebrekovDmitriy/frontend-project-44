@@ -1,11 +1,11 @@
-import roundGames from "../index.js";
-import getRandom from "../getRandom.js";
-import nod from "../nod.js";
+import roundGames from '../index.js';
+import getRandom from '../getRandom.js';
+import nod from '../nod.js';
 
 const gcd = () => {
-  let answerCorrect = "";
-  let questionGcd = "";
-  let resultGcd = ["Find the greatest common divisor of given numbers."];
+  let answerCorrect = '';
+  let questionGcd = '';
+  let resultGcd = ['Find the greatest common divisor of given numbers.'];
   for (let i = 0; i < 3; i++) {
     const numberOneGcd = getRandom(1, 100); // setting the range of random number 1
     const numberTwoGcd = getRandom(1, 100); // setting the range of random number 2

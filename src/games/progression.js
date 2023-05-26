@@ -1,9 +1,9 @@
-import roundGames from "../index.js";
-import getRandom from "../getRandom.js";
+import roundGames from '../index.js';
+import getRandom from '../getRandom.js';
 
 const progression = () => {
-  let answerCorrect = "";
-  let resultProgression = ["What number is missing in the progression?"];
+  let answerCorrect = '';
+  let resultProgression = ['What number is missing in the progression?'];
   for (let i = 0; i < 3; i++) {
     let questionProgression = [];
     const numberOneP = getRandom(1, 100); // setting the range of random number 1
@@ -15,8 +15,8 @@ const progression = () => {
       baseProgression = baseProgression + stepProg;
     }
     answerCorrect = String(questionProgression[indexProg]);
-    questionProgression.splice(indexProg, 1, "..");
-    resultProgression.push([questionProgression.join(" "), answerCorrect]);
+    questionProgression.splice(indexProg, 1, '..');
+    resultProgression.push([questionProgression.join(' '), answerCorrect]);
   }
   return resultProgression;
 };
