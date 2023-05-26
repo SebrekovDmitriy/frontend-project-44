@@ -21,7 +21,7 @@ function roundGames(baseQuestion) {
       }
     } else {
       console.log(
-        `'${answer}' is wrong answer ;(. Correct answer was '${answerRound}'.\nLet\'s try again, ${nameUser}!`,
+        `'${answer}' is wrong answer ;(. Correct answer was '${answerRound}'.\nLet's try again, ${nameUser}!`,
       );
       break;
     }

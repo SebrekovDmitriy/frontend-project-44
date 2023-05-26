@@ -12,7 +12,7 @@ const progression = () => {
     const indexProg = getRandom(0, 9); // setting the range of random index progression
     for (let p = 0; p <= 9; p += 1) {
       questionProgression.push(baseProgression);
-      baseProgression = baseProgression + stepProg;
+      baseProgression += baseProgression + stepProg;
     }
     answerCorrect = String(questionProgression[indexProg]);
     questionProgression.splice(indexProg, 1, '..');
