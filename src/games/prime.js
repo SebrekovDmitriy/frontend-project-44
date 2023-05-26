@@ -2,18 +2,18 @@ import roundGames from '../index.js';
 import getRandom from '../getRandom.js';
 
 const prime = () => {
-  let resultPrime = [
+  const resultPrime = [
     'Answer "yes" if given number is prime. Otherwise answer "no".',
   ];
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     let answerCorrect = 'yes';
     let questionPrime = '';
     const numberPrime = getRandom(2, 101); // setting the range of random number 1
     questionPrime = numberPrime;
     for (
-      var startNumber = 2;
+      let startNumber = 2;
       startNumber <= Math.sqrt(numberPrime);
-      ++startNumber
+      startNumber += 1
     ) {
       if (numberPrime % startNumber === 0) {
         answerCorrect = 'no';

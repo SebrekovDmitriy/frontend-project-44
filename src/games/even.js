@@ -3,7 +3,7 @@ import getRandom from '../getRandom.js';
 
 const even = () => {
   let answerCorrect = '';
-  let resultEven = [
+  const resultEven = [
     'Answer "yes" if the number is even, otherwise answer "no".',
   ];
   for (let i = 0; i < 3; i++) {

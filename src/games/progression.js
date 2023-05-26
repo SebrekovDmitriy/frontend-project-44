@@ -3,14 +3,14 @@ import getRandom from '../getRandom.js';
 
 const progression = () => {
   let answerCorrect = '';
-  let resultProgression = ['What number is missing in the progression?'];
-  for (let i = 0; i < 3; i++) {
-    let questionProgression = [];
+  const resultProgression = ['What number is missing in the progression?'];
+  for (let i = 0; i < 3; i += 1) {
+    const questionProgression = [];
     const numberOneP = getRandom(1, 100); // setting the range of random number 1
     let baseProgression = numberOneP;
     const stepProg = getRandom(1, 20); // setting the range of random step progression
     const indexProg = getRandom(0, 9); // setting the range of random index progression
-    for (var p = 0; p <= 9; p++) {
+    for (let p = 0; p <= 9; p += 1) {
       questionProgression.push(baseProgression);
       baseProgression = baseProgression + stepProg;
     }

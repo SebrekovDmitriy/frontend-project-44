@@ -4,8 +4,8 @@ import getRandom from '../getRandom.js';
 const calc = () => {
   let answerCorrect = '';
   let questionCalc = '';
-  let resultCalc = ['What is the result of the expression?'];
-  for (let i = 0; i < 3; i++) {
+  const resultCalc = ['What is the result of the expression?'];
+  for (let i = 0; i < 3; i += 1) {
     const baseOperator = ['+', '-', '*'];
     const numberOneCalc = getRandom(1, 30); // setting the range of random number 1
     const numberTwoCalc = getRandom(1, 30); // setting the range of random number 2
